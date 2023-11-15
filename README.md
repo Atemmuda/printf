@@ -1,4 +1,4 @@
-# printf Project
+# printf
 ## Concept
 * Group Projects
 * Pair Programming - How To
@@ -15,32 +15,23 @@ What you should learn from this project:
 * The complexities of printf
 * Managing a lot of files and finding a good workflow
 
-Please these are the files we will create
-main.h
-_printf.c
-main.h
-man_3_printf
-print_characters.c
-print_numbers.c
-select_flag.c
-select_print.c
-write_functions.c
-Create the last three of them and I will create the other three. The readme and man page will be checked before the real work will be scored. I will indicate in the main.h which file to include what.
+## Tasks
+0. Write a function that produces output according to a format.
 
-We are to provide the answers to the following tasks:
-Task 0 - Write a function that produces output according to a format.
-Task 1 - Handle the following conversion specifiers: d, i.
-Task 2 - Handle the following custom conversion specifiers: b.
-Task 3 - Handle the following conversion specifiers: u, o, x, X.
-Task 4 - Use a local buffer of 1024 chars in order to call write as little as possible.
-Task 5 - Handle the following custom conversion specifier: s, /x.
-Task 6 - Handle the following conversion specifier: p.
-Task 7 - Handle the following flag characters for non-custom conversion specifiers: +, space, #.
-Task 8 - Handle the following length modifiers for non-custom conversion specifiers: l, h. Conversion specifiers to handle: d, i, u, o, x, X.
-Task 9 - Handle the field width for non-custom conversion specifiers.
-Task 10 - Handle the precision for non-custom conversion specifiers.
-Task 11 - Handle the 0 flag character for non-custom conversion specifiers.
-Task 12 - Handle the - flag character for non-custom conversion specifiers.
-Task 13 - Handle the following custom conversion specifier: r : prints the reversed string.
-Task 14 - Handle the following custom conversion specifier: R: prints the rot13'ed string
-Task 15 - All the above options work well together.
+* Prototype: int _printf(const char *format, ...);
+* Returns: the number of characters printed (excluding the null byte used to end output to strings)
+* write output to stdout, the standard output stream
+* format is a character string. The format string is composed of zero or more directives. See man 3 printf for more  detail. 
+1. You need to handle the following conversion specifiers:
+    1. _c_
+    2. _s_
+    3. _%_
+    4. _You don’t have to reproduce the buffer handling of the C library printf function_
+    5. _You don’t have to handle the flag characters_
+    6. _You don’t have to handle field width_
+    7. _You don’t have to handle precision_
+    8. _You don’t have to handle the length modifiers_
+
+## Authors
+1. [Nathaniel Kankam](https://github.com/Atemmuda/)
+2. [Joshua Adu Mensah](https://github.com/joshuaadu)
